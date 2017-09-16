@@ -15,3 +15,32 @@
   para os tipos inteiros: int , integer.Para os tipos reais:real, float, double.Para
   strings sómente é possivel declarar os tipo string.E para valores booleanos não é
   possivel fazer um typecast especifico.
+
+OPERADORES ARITMÉTICOS
++ SOMA
+- SUBTRAÇÃO
+* mULTIPLICAÇÃO
+/ MULTIPLICAÇÃO
+% MÓDULO
+--ORDEM DE PRECEDENCIA
+1= ()
+2= *,/,% -
+3= +,-
+
+RECEBENDO VALORES PELA URL
+URL - www.site.com/arquivo.php?a=1&b=2
+      |-as variaveis enviadas aqui foram a e b
+      |-para manipulalas no php usamos a variavel global $_GET que é um array
+        o valor de a da URL vai estar no index de mesmo nome da variavel
+        ,logo $_GET["a"] vai conter o valor 1.
+
+MÉTODOS PARA NÚMEROS
+abs() - retorna o valor absoluto do número
+pow(a,b) - faz a potenciação de a por b
+sqrt() - retorna a raiz quadrada do parametro
+round() - retorna o valor arredondado do parametro
+ceil() - retorna o valor arredondado para cima do parametro
+floor() - retorna o valor arredondado para baixo do parametro
+intval() - retorna a parte inteira de um valor float
+number_format(x,2,",",'.') - retorna o valor de x com 2 casas decimais e com o divisor de
+                             decimal sendo uma virgular e o divisor de milhar sendo um ponto

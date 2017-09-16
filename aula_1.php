@@ -10,7 +10,7 @@
       $int = 1;//OS TYPECASTS DESSE TIPO PODEM SER (int) OU (integer)
       $float = 2.55;//OS TYPECASTS DESSE TIPO PODEM SER (real) OU (float) OU (double)
       $string = "shows";//O TYPECAST DESSE TIPO É (string)
-      $boolean = false;//ESSE TIPO NÃO POSSUI TYPECAST
+      $boolean = false;//OS TYPECASTS DESSE TIPO PODEM SER (bool) OU (boolean)
 
       echo "$int <br> $float <br> $string";
       echo '<hr>';
