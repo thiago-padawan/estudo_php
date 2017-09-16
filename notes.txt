@@ -1,0 +1,17 @@
+| echo ''; |--comando para printar coisar na tela, pode ser usada tags html dentro desse
+              comando.
+            -- para printar expressões concatenadas,usamos . (ponto),exemplo
+            echo $x.', texto'.$y.", mais texto", ou podemos colocar tudo entre aspas
+            com "$x, texto $y, mais texto",lembrando que as aspas tem que ser duplas
+            , caso seja usada aspas simple, serão mostrado o texto cru.
+
+-VARIAVEIS-
+|-sempre começam com $
+|-são case sensitive
+|-o php suporta os quatro tipos primitivos:inteiro,real,string,booleano
+  , ele não te obriga a declarar o tipo junto da variavel pois ele ja converte
+  automaticamente de pendendo da atribuição, porém através de um typecast é possivel
+  especificar de qual tipo qual tipo a variavel será ,logo é possivel especificar
+  para os tipos inteiros: int , integer.Para os tipos reais:real, float, double.Para
+  strings sómente é possivel declarar os tipo string.E para valores booleanos não é
+  possivel fazer um typecast especifico.
