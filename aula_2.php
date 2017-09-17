@@ -19,7 +19,7 @@
         $mult = $n1*$n2;//MULTIPLICAÇÃO
         $div = $n1/$n2;//DIVISÃO
         $mod = $n1%$n2;//MÓDULO
-        echo '<h2>'.'A soma de '.$n1.' e '.$n2.' é '.$soma.'<br> <br>';
+        echo '<h2>'.'A soma de '.$n1.' e '.$n2.' é '.number_format($soma,2,',','.').'<br> <br>';
         echo '<h2>'.'A subtração de '.$n1.' e '.$n2.' é '.$sub.'<br> <br>';
         echo '<h2>'.'A multiplicação de '.$n1.' e '.$n2.' é '.$mult.'<br> <br>';
         echo '<h2>'.'A divisão de '.$n1.' e '.$n2.' é '.$div.'<br> <br>';

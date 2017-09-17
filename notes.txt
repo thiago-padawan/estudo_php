@@ -44,3 +44,34 @@ floor() - retorna o valor arredondado para baixo do parametro
 intval() - retorna a parte inteira de um valor float
 number_format(x,2,",",'.') - retorna o valor de x com 2 casas decimais e com o divisor de
                              decimal sendo uma virgular e o divisor de milhar sendo um ponto
+
+---------------------------------------------------------------------------------------------
+ATRIBUIÇÃO
+a += 2 ;//Adiciona 2 em a
+a -= 2 ;//Subtrai 2 de a
+a *= 2 ;//Multiplica a por 2
+a /= 2 ;//Divide a por 2
+a %= 2 ;//Faz o módulo de a por 2
+a .= 2 ;//Concatena a com 2
+
+a++ e a--; //Pós-incremento & Pós-decremento
+++a e --a;//Pré-incremento && Pré-decremento
+
+
+COMENTÁRIOS
+
+//-|
+   |-criam comentários de uma linha
+#--|
+
+/* */ cria comentários de várias linhas
+
+
+VARIAVEIS REFERENCIADAS
+$b = 5;
+$a = &$b; //caso sejam feitas alterações tanto em a quanto em b as mudanças serão
+            atualizadas na outra variavel ;
+
+VARIAVEIS VARIANTES OU VARIAVEIS VARIAVEIS
+$a = 'var';
+$$a = 'outa_var'; //cria uma variavel que terá o nome do valor atribuido a variavel $a
