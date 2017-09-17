@@ -75,3 +75,21 @@ $a = &$b; //caso sejam feitas alterações tanto em a quanto em b as mudanças s
 VARIAVEIS VARIANTES OU VARIAVEIS VARIAVEIS
 $a = 'var';
 $$a = 'outa_var'; //cria uma variavel que terá o nome do valor atribuido a variavel $a
+
+OPERADORES RELACIONAIS
+
+MAIOR E MAIOR IGUAL | > E >=
+MENOR E MENOR IGUAL | < E <=
+IGUAL E DIFERENTE   | == E (!= OU <>)
+IDENTICO            | ===
+
+OPERADOR TERNÁRIO
+
+<expreção> ? <verdadeiro> : <falso> ;
+
+OPERADORES LÓGICOS
+
+E - and ou &&
+OU- or ou ||
+XOU - xor
+NÃO - !
