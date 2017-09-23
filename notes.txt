@@ -24,7 +24,7 @@ OPERADORES ARITMÉTICOS
 % MÓDULO
 --ORDEM DE PRECEDENCIA
 1= ()
-2= *,/,% -
+2= *,/,%
 3= +,-
 
 RECEBENDO VALORES PELA URL
@@ -93,3 +93,24 @@ E - and ou &&
 OU- or ou ||
 XOU - xor
 NÃO - !
+
+--------------------------------------------------------------------------------
+CAPTURANDO VALORES DE FORMS
+
+<form method="get" action="02idade.php">
+|-com esses atributos de form todos os valores do input serão
+  atribuidos na var glabal $_GET esses valores serão trabalhados
+  no arquivo 02idade.php
+|-o nome do index na var $_GET será o name especificado no input e o
+  valor se´ra o própio value,logo, em
+  <input type="checkbox" name="nome" value="sim"/>
+  o index será nome e o valor será sim,para capturar esse valor acessaremos
+  no arquivo 02idade.php a seguinte var, $_GET['nome'] que possuira o valor "sim";
+
+---------------------------------------------------------------------------------------
+isset();//o parametro deve ser uma variavel e deve retornar true caso a var esteja definida
+          e retornar false caso ela não esteja definida
+
+date()
+  date('Y')//com y maiusculo retorna o ano atual inteiro , exemplo:2017;
+  date('y')//retorna o ano atual reduzido, exemplo :17;
