@@ -114,3 +114,52 @@ isset();//o parametro deve ser uma variavel e deve retornar true caso a var este
 date()
   date('Y')//com y maiusculo retorna o ano atual inteiro , exemplo:2017;
   date('y')//retorna o ano atual reduzido, exemplo :17;
+---------------------------------------------------------------------------------------------
+
+ESTRUTURAS CONDICIONAIS
+
+if(){              if(){        if(){
+           ou      }else{  e    }elseif(){
+}                  }            else{
+                                }
+
+switch(expreção){
+  case(teste):
+  break;
+
+  case(teste):
+  break;
+
+  default:
+}
+
+exemplo:
+
+switch($x){
+  case 1:
+  //code here
+  break;
+  case 2:
+  //case 2:
+  break;
+  default:
+  //código caso nenhuma das opções ocorrerem
+}
+
+switch($x){
+  case 1:
+  case 2:
+  case 3:
+  //code here;
+  break;
+  case 4:
+  case 5:
+  //code here;
+  break;
+  default:
+  //code here;
+}
+
+while(){
+
+}
