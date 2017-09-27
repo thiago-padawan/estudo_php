@@ -163,3 +163,64 @@ switch($x){
 while(){
 
 }
+
+do{}while();
+
+for($c=1;$c<=$n;$c++){}
+
+Procedimentos-que nada mais são que funções sem retorno
+function soma($a,$b){
+  $s = $a + $b ;
+  echo $ ;
+}
+
+Funções - essa possuem retorno
+
+function soma($a,$b){
+  return $a,$b;
+}
+$s = soma(2,3);
+
+RECEBENDO MULTIPLOS PARAMETROS
+|-dentro da função usamos uma variavel para capturar o valor
+  de retorno na função func_get_args();,que retorna um array com
+  todos os valores passados como parametro
+
+|-também usaremos a função func_num_args(); que retorna o numero de parametros
+  passados
+
+
+PASSANDO PARAMETROS:
+|POR VALOR:
+  function soma_dois($a){
+    $a += 2 ;
+    echo $a;
+  }
+  $b = 2;
+  soma_dois($b);
+  Essa é a passagem mais simples,onde o valor do parametro
+  é diretamente tratado durante a função
+|POR REFERÊNCIA
+  function soma_dois(&$a){
+    $a += 2;
+    echo a;
+  }
+  $b = 2;
+  soma_dois($b);
+  Já essa passagem vai tratar o valor da variavel passada
+  mas como o parametro é uma referencia da mesma
+  qualquer alteração nele tambem ira afetar a variavel passada
+  durante a chamada da função, no exemplo acima tamto $a quanto
+  $b irão valer 4.
+
+---------------------------------------------------------------
+UTILIZANDO FUNÇÕES E ROTINAS EXTERNAS
+|-para utilizar arquivos e códigos externos no PHP
+  uilizamos o o include e o require
+|include - caso não se consigar incluir o arquivo especificado
+  o código irá continuar normalmente
+|require - caso o arquivo não consiga ser incluido o código ira parar
+  justamente nessa falha
+|include_once e require_once - caso o arquivo especificado já foi carregado
+  antes no script então ele não irá carregar o arquivo de novo e caso arquivo não
+  foi carregado ele ira carregar pela primeira vez  
