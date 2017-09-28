@@ -223,4 +223,112 @@ UTILIZANDO FUNÇÕES E ROTINAS EXTERNAS
   justamente nessa falha
 |include_once e require_once - caso o arquivo especificado já foi carregado
   antes no script então ele não irá carregar o arquivo de novo e caso arquivo não
-  foi carregado ele ira carregar pela primeira vez  
+  foi carregado ele ira carregar pela primeira vez
+-------------------------------------------------------------------------
+
+FUNÇÕES PARA MANIPULAR STRINGS-
+
+printf() - mostra uma string formatada a partir de alguns parametros
+  |-o primeiro argumento é a string a ser formatada e os utros serão os valores
+    que serão inseridos na string
+  |os valoresque serão inseridos devem teraseguinte representação
+    |-%d :para decimais(positivos ou negativos)
+    |-%u : para decimais sem sinal(apenas positivos)
+    |-%f : valor real
+    |-%s : valor string
+
+print_r()
+var_dump()
+var_export()
+|-mostra detalhes de uma determinada variavel,principalmente vetores;
+
+wordwrap()-Irá configurar a quebra de linha de uma determinada função
+|-O primeiro argumento é o texto a ser formatado o segundo a numero maximo
+  de caracteres para ocorrer a quebra de linha o terceiro é o texto a ser
+  inserido (normalmente </br>) quando houver a quebra e o,e o quarto e ultimo
+  argumento vai pode ser true ou false , quando false vai não vai quebrar se a
+  palavra ultrapassar o limite para a quebra , caso true , mesmo que a palavra
+  ultrapasse o valor o ela será quebrada
+
+strlen()- mostra o tamanho de uma string;
+
+trim()-Retira espaços antes e depois de uma string
+|-ltrim()-Retira espaços antes de uma string
+|-rtrim()-Retira espaços no final de uma string
+
+str_word_count()-Mostra o numero de palavra em uma string
+|-O primeiro parametro é a string a ser trabalhada e o segundo é
+  oque a função vai setornar,caso:
+  |-0 : vai retornar quantas palavra a string tem
+  |-1 : vai retorna um array com cada palavra em um index que começa em 0
+  |-2 : vai retornar um array em que o index de cada palavra será equivalente
+        ao index onde ela aparece na string
+
+explode()-Transforma uma string em um vetor
+|-O primeiro argumento é onde dividir a string
+|-O segundo argumento sera a string a ser trabalhada
+
+str_split()-Transforma cada letra de uma string em um elemento de um array
+
+join()
+implode()-Transforma um array e uma string
+|-O primeiro parametro é oque será colocado entre cada elemento do vetor
+|-O segundo parametro será o arry ser trabalhada
+
+chr()-Mostra a letra equivalente ao código ASCII
+ord()-Mostra o código ASCII equivalente a letra
+
+strtolower()-Converte toda a string em letras minusculas
+strtoupper()-Converte toda a string em letras maisculas
+ucwords()
+ucfirst()-Todas as primeiras letras serão maiusculas
+
+strrev()-Mostra a string inversamente
+
+strpos()-Retorna a posição de um determinados trecho dentro de uma string
+|-Possui dois parametros sendo o primeiro a string a ser analizada
+|-E o segundo será o trecho ser achado
+
+stripos()-Retorna a posição de um determinados trecho dentro de uma string
+          e ignora a caixa(alta ou baixa) do trecho
+|-Possui dois parametros sendo o primeiro a string a ser analizada
+|-E o segundo será o trecho ser achado
+
+substr_count()-Ira retornar quantas vezes um determinado trecho foi encontrado
+|-Possui dois parametros sendo o primeiro a string a ser analizada
+|-E o segundo será o trecho ser achado
+
+sbstr()-Retorna o trecho de uma string
+|-Possui 3 parametros sendo o primeiro a string a ser analizada
+|-E o segundo será o index da primeira letra do trecho
+|-E o terceiro será o index da ultima letra do trecho
+|-Caso seja passado apenas um index, este será o primeiro do trecho
+  ,e apartir dele o trecho será formado até o final da string original
+
+str_pad()-Irá preencher uma string para ela ocupar um determinado tamanho
+|-Essa função tem 4 parametros sendo 
+|-Primeiro é a própia string a ser trabalhada
+|-O segundo qual será o tamanho em numero de caracteres que 
+  a string deverá ter
+|-O terceiro é com oque a função irá preencher o espaços que sobrarem
+|-E por fim o quarto é aonde o as função deve colocar o preenchimento
+  , esse prametro pode ser:
+  ▲-STR_PAD_RIGHT:preenche todos os caracteres a mais na direita
+  ▲-STR_PAD_BOTH:preenche metade na esqueda e metade na direita
+  ▲-STR_PAD_LEFT:preenche todos os caracteres a mais na esquerda
+
+str_repeat()-Ira repetir uma determinada string um determinado numero de vezez
+|-Ela possui apenas dois parametros, sendo o primeiro a string a ser repetida
+|-E o segundo ´parametro é quantas vezez ela devera ser 
+
+str_replace()-Substitui um determinado trecho por outro
+|-Essa função recebe trêsparametro 
+|-O primeiro é o trecho que será retirado
+|-O segundo o trecho a ser colocado
+|-O ultimos é a string onde esses trecho serão trabalhados
+
+str_ireplace()-Substitui um determinado trecho por outro e ignora a caixa dos trechos
+|-Essa função recebe trêsparametro 
+|-O primeiro é o trecho que será retirado
+|-O segundo o trecho a ser colocado
+|-O ultimos é a string onde esses trecho serão trabalhados
