@@ -333,3 +333,97 @@ str_ireplace()-Substitui um determinado trecho por outro e ignora a caixa dos tr
 |-O primeiro é o trecho que será retirado
 |-O segundo o trecho a ser colocado
 |-O ultimos é a string onde esses trecho serão trabalhados
+
+---------------------------------------------------------------------------------------
+VETORES E MATRIZES
+
+Declarando arrays
+$x=[] ou $x=array();
+.. ou simpismente adicionando index a variavel:
+$x[0] = 1;
+$x[1] = 2;
+
+Para adicionar mais um valor no vetor podemos usar um index vazio na
+declaração:
+$x[] = 3 ;
+▲-Com essa declaração será adicionada mais um index no array
+ com o valor 3;
+
+
+ -----------------------------------------
+ Arrays pré definidos
+
+ range()-retorna um array pré definido apartir dos parametros
+ ▲-essa função possui 3 parametro
+ ▲-o primeiro é o valor inicial do array, o valor no index 0
+ ▲-o segundo segundo é o ultimo valor desse array
+ ▲-e o ultimo e terceiro é o valor do passo entre a cada elemento
+ |-basicamente essa função ira pega o primeiro valor e somar o valor
+   do passo até chegar no ultimo valor.
+
+foreach($array as $variavel){}-irá passar por casa valor do array 
+  e atribuir cada elemento na variavel $variavel
+ou
+foreach($array as $chave=>$variavel){}
+
+-----------------------------------------------------------
+CHAVES PERSONALIZADAS
+
+podemos criar index personalizados ao invés dos index padrões
+criados pelo PHP
+para declararmos isso podemos fazer o seguinte
+
+$x=array(1=>"valor1",5=>"valor2",18=>"valor3");
+|-com essa declaração podemos acessar atrvés das chaves 1,5,18 
+  os valores do array  
+
+---------------------------------------------------
+RETIRANDO VALORES
+
+unset()-retira um valor em array
+▲-pussui apenas um parametro eque é um array seguido
+  do index no qual vc quer retirar
+
+----------------------------------------------------
+MATRIZES
+
+nada mais é que vatores dentro de vetores, com isso
+podemos declarar com
+
+$matriz = array("vetor1"=>array(1,2),
+                "vetor2"=>array(4,5),
+                "vetor3"=>array(6,7)
+                );
+
+para acessar os valores internos devemos usar duas chaves de 
+index seguidas:
+  $matriz["vator1"][0];
+  ▲-essa declaração vai retornar o valor 1
+
+--------------------------------------------------------------
+Funções
+
+count($vetor) - mostra quantos elementos o vetor possui
+array_push()-colocar um elemento no final do vetor
+|- o primeiro paramentro é o própio vetor e o segundo é o valor a ser adicionado
+array_pop()-elimina o ultimo elemto do vetor
+
+array_unshift()-adiciona um elemento no inicio do vetor
+|- o primeiro parametro é o vetor, e segundo é o elemento
+
+array_shift()-retira o primeiro elemento de um array
+
+sort()-organiza os elemetos de um array por ordem crescente
+
+rsort()-organiza os elemetos de um array por ordem decrescente
+
+asort()-ira organizar os valores por ordem crescente e mamter seus index
+  originais
+
+arsort()-organizza um vetor por ordem decrescente e mamtem os vetores originais
+
+ksort()-nessa função o array sera organizado de forma crescente baseado não nos
+  calores mas sim nos index dos mesmos
+ 
+krsort()-nessa função o array sera organizado de forma decrescente baseado não nos
+  calores mas sim nos index dos mesmos
